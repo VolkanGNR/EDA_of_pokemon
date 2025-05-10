@@ -50,7 +50,7 @@ for category in ['Type_1', 'Type_2', 'Generation', 'Legendary']:
 
 df_new['Type_2'] = df_new['Type_2'].fillna('x')
 
-fig, axes = plt.subplots(2, 2, figsize=(12, 10))  # 2 rows, 2 columns
+fig, axes = plt.subplots(2, 2, figsize=(12, 10))  
 axes = axes.flatten()  # Flatten the axes array for easier indexing
 
 for idx, category in enumerate(['Type_1', 'Type_2', 'Generation', 'Legendary']):
@@ -66,7 +66,7 @@ for idx, category in enumerate(['Type_1', 'Type_2', 'Generation', 'Legendary']):
 
 plt.show()
 
-df_new.to_excel("/Users/volkanguner/Desktop/Pokemon.xlsx", index=False)
+
 
 
 
